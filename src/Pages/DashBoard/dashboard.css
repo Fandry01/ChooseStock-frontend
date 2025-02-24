@@ -35,18 +35,27 @@
 }
 .stock-card .chart-container {
     display: flex;
-    justify-content: center;  /* Horizontaal centreren */
-    align-items: center;      /* Verticaal centreren */
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .stock-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Horizontaal centreren */
-    align-items: center;      /* Verticaal centreren */
-            /* Zorg ervoor dat de card genoeg ruimte heeft */
-    padding: 20px;            /* Optioneel: geef wat ruimte rond de inhoud */
-    box-sizing: border-box;   /* Zorg ervoor dat padding niet buiten de card valt */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.error-message {
+    color: #ff4c4c;
+    background: rgba(255, 76, 76, 0.1);
+    border: 1px solid #ff4c4c;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
 }
 
 body {

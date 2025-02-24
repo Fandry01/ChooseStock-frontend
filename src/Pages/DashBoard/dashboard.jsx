@@ -16,9 +16,11 @@ function Dashboard() {
     const [stockData,setStockData] = useState(null);
     const [loading,setLoading] = useState(false);
     const [showWelcome,setShowWelcome] =useState(true);
+    const [error,setError] = useState(null);
 
     const handleSearchClick = () => {
         setSymbol(searchInput);
+        setError(null);
         console.log('Search button clicked, symbol:', searchInput);
     };
     useEffect(() => {
@@ -36,10 +38,11 @@ function Dashboard() {
                     console.log("API response", data);
                     setStockData(data);
                 } else{
-                    console.error("Received null or undefined data");
+                    console.error("Invalid stock ticker. Please try again.");
                 }
         }).catch(error =>{
             console.error("Error fetching stock Data",error);
+            setError(error.message);
         }).finally(() =>{
             setLoading(false);
         })
@@ -58,6 +61,7 @@ function Dashboard() {
                     </Button>
                 </div>
                 {showWelcome && <WelcomeMessage />}
+                {error && <div className="error-message">{error}</div>}
                 {loading &&(<div className="loading-container">
                     <ClipLoader color="#007bff" size={50}/>
                     </div>)}
