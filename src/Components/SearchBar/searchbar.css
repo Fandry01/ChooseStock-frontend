@@ -1,0 +1,28 @@
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 100%;
+    min-width: 500px;
+    max-width: 800px;
+}
+.searchbar input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+.searchbar input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+.searchbar input:hover {
+    border-color: #2756b3;
+}
+searchbar input:focus {
+    box-shadow: 0 0 8px rgba(0, 150, 136, 0.6);
+}

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Dashboard-container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 20px;
+}
+.card-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.wide-card{
+    flex: 2;
+    width: 300px;
+}
+.card-row1{
+    display: flex;
+    justify-content: center;
+    flex:1;
+    gap: 8px;
+    color: black;
+}
+
+body {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: white;
+    font-family: Arial, sans-serif;
+}
