@@ -29,9 +29,24 @@
 .card-row1{
     display: flex;
     justify-content: center;
-    flex:1;
+    flex:2;
     gap: 8px;
     color: black;
+}
+.stock-card .chart-container {
+    display: flex;
+    justify-content: center;  /* Horizontaal centreren */
+    align-items: center;      /* Verticaal centreren */
+    width: 100%;
+}
+.stock-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Horizontaal centreren */
+    align-items: center;      /* Verticaal centreren */
+            /* Zorg ervoor dat de card genoeg ruimte heeft */
+    padding: 20px;            /* Optioneel: geef wat ruimte rond de inhoud */
+    box-sizing: border-box;   /* Zorg ervoor dat padding niet buiten de card valt */
 }
 
 body {

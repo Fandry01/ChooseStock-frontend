@@ -10,6 +10,7 @@ ChartJS.register(
 
 function StockPieChart({stockData, chartWidth, chartHeight}) {
 if(!stockData || !stockData.keyMetrics) return null;
+
 const data ={
                         labels: ["TotalRevenue", "Net Income","TotalAssets","TotalLiabilities"],
                         datasets: [
@@ -32,7 +33,7 @@ const options ={
 
     return(
         <div style={{width: chartWidth, height:chartHeight}}>
-            <Pie data={data} options={options}/>;
+            <Pie data={data} options={options}/>
         </div>
         );
 }

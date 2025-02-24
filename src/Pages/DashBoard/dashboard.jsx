@@ -99,11 +99,13 @@ function Dashboard() {
                            </div>
 
                            <Card title="Stock OverView" className="stock-card">
+                               <div className="chart-container">
                                    <StockPieChart stockData={stockData} chartWidth="700px" chartHeight="500px"/>
+                               </div>
                            </Card>
                        </>
 
-                   )
+                       )
                    }
 
             </div>
