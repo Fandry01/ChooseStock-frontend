@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = "choosestock-production.up.railway.app/api/analyze";
+const API_BASE_URL = "https://choosestock-production.up.railway.app/api/analyze";
 
 export const fetchStockData = async (symbol) =>{
     try {
