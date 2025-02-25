@@ -20,6 +20,7 @@ Button.propTypes = {
     buttonType: PropTypes.string,
     handleClick: PropTypes.func,
     handleSubmit: PropTypes.func,
+    className: PropTypes.string,
 };
 
 export default Button;

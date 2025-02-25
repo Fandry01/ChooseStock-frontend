@@ -11,7 +11,7 @@ function WelcomeMessage() {
             <h1>
                 Welcome to Stock Analyzer !
             </h1>
-            <h3 className>
+            <h3>
                 With StockAnalyzer, you can easily analyze a company's financial data and make more informed investment
                 decisions.
             </h3>

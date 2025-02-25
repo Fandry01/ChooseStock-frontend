@@ -11,14 +11,18 @@ import WelcomeMessage from "../../Components/WelcomeMessage/WelcomeMessage.jsx";
 
 
 function Dashboard() {
-    const [searchInput, setSearchInput] = useState('');
+    const [searchInput,setSearchInput] = useState('');
     const [symbol,setSymbol] = useState('');
     const [stockData,setStockData] = useState(null);
     const [loading,setLoading] = useState(false);
-    const [showWelcome,setShowWelcome] =useState(true);
+    const [showWelcome,setShowWelcome] = useState(true);
     const [error,setError] = useState(null);
 
     const handleSearchClick = () => {
+        if (!searchInput) {
+            setError("Please enter a stock symbol.");
+            return;
+        }
         setSymbol(searchInput);
         setError(null);
         console.log('Search button clicked, symbol:', searchInput);
@@ -42,7 +46,7 @@ function Dashboard() {
                 }
         }).catch(error =>{
             console.error("Error fetching stock Data",error);
-            setError(error.message);
+            setError(error.message ||"An error occurred while fetching data.");
         }).finally(() =>{
             setLoading(false);
         })
@@ -53,10 +57,10 @@ function Dashboard() {
         <>
             <div className="Dashboard-container">
                 <div className="search-container">
-                    <Searchbar placeholderValue={"Enter a company’s stock ticker symbol (e.g., AAPL for Apple, TSLA for Tesla)"}
+                    <Searchbar placeholderValue="Enter a company’s stock ticker symbol (e.g., AAPL for Apple, TSLA for Tesla)"
                                inputValue={searchInput}
                                changeHandler={(e) => setSearchInput(e.target.value)}/>
-                    <Button buttonType="button" handleClick={handleSearchClick}>
+                    <Button className="dashBoard-button" buttonType="button" handleClick={handleSearchClick}>
                         Search
                     </Button>
                 </div>
@@ -65,7 +69,7 @@ function Dashboard() {
                 {loading &&(<div className="loading-container">
                     <ClipLoader color="#007bff" size={50}/>
                     </div>)}
-                   {stockData && stockData.keyMetrics && (
+                   {stockData && stockData.keyMetrics !== undefined && (
                        <>
                            <div className="card-row">
                                <Card title="Company Summary" className="wide-card">
