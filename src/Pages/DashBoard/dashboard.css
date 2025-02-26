@@ -20,9 +20,9 @@
 }
 .welcome-message {
     display: flex;
-    justify-content: center; /* Horizontaal centreren */
-    align-items: center; /* Verticaal centreren (optioneel) */
-    text-align: center; /* Tekst in het midden */
+    justify-content: center;
+    align-items: center; /
+    text-align: center;
     width: 100%;
     margin-top: 20px;
     font-size: 1.2rem;
@@ -90,8 +90,13 @@ body {
     }
 }
 @media (max-width: 768px) {
+    .hero-section{
+        min-height:80vh;
+        padding: 60px 20px;
+    }
     .search-container {
         flex-direction: column;
+        width: 95%;
         gap: 10px;
     }
 

@@ -5,7 +5,8 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding:20px;
     color: white;
     background-image: url("/src/assets/ai-generated-9122293_1280.jpg");
     background-size: cover;
