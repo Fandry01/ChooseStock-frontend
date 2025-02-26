@@ -26,3 +26,25 @@
 searchbar input:focus {
     box-shadow: 0 0 8px rgba(0, 150, 136, 0.6);
 }
+@media (max-width: 768px){
+    .searchbar {
+        width: 100%;
+        padding: 0;
+        margin: 15px;
+    }
+    .searchbar input{
+        width: 100%;
+    }
+
+    .searchbar input {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+@media (max-width:480px ) {
+    .searchbar input {
+        font-size: 14px;
+        padding: 10px 15px;
+        width: 70%;
+    }
+}

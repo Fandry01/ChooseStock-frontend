@@ -61,7 +61,7 @@ function Dashboard() {
                     <Searchbar placeholderValue="Enter a company’s stock ticker symbol (e.g., AAPL for Apple, TSLA for Tesla)"
                                inputValue={searchInput}
                                changeHandler={(e) => setSearchInput(e.target.value)}/>
-                    <Button className="dashBoard-button" buttonType="button" handleClick={handleSearchClick}>
+                    <Button className="dashboard-button" buttonType="button" handleClick={handleSearchClick}>
                         Search
                     </Button>
                 </div>

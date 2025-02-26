@@ -82,3 +82,23 @@ button{
         padding: 10px;
     }
 }
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 40px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section h3,
+    .hero-section h4 {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        width: 50%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
