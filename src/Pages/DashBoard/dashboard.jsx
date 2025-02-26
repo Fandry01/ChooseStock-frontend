@@ -42,6 +42,7 @@ function Dashboard() {
                     console.log("API response", data);
                     setStockData(data);
                 } else{
+                    setError("Invalid stock ticker. Please try again.")
                     console.error("Invalid stock ticker. Please try again.");
                 }
         }).catch(error =>{
@@ -64,8 +65,8 @@ function Dashboard() {
                         Search
                     </Button>
                 </div>
-                {showWelcome && <WelcomeMessage />}
                 {error && <div className="error-message">{error}</div>}
+                {showWelcome && <div className="welcome-message"><WelcomeMessage /></div>}
                 {loading &&(<div className="loading-container">
                     <ClipLoader color="#007bff" size={50}/>
                     </div>)}
