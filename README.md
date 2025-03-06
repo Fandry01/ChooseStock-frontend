@@ -1,8 +1,19 @@
-# React + Vite
+# 📊 Stock Analyzer - AI-Powered Stock Analysis (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Stock Analyzer** is an AI-driven stock market analysis platform that provides **real-time financial insights** and AI-generated investment decisions. This repository contains the **React frontend** of the application.
 
-Currently, two official plugins are available:
+## 🌟 Features
+✅ **AI-Powered Stock Analysis** – Uses Langchain4j & OpenAI API for intelligent stock insights  
+✅ **Live Stock Data** – Fetches real-time financial data via REST APIs  
+✅ **Interactive Dashboard** – Displays key stock metrics (profit margin, revenue, net income, etc.)  
+✅ **Competitor Analysis** – Compares companies within the same industry  
+✅ **Fully Responsive UI** – Optimized for desktop & mobile
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **Frontend:** React, JavaScript, CSS
+- **AI & APIs:** Langchain4j, OpenAI API, REST API
+- **UI Frameworks:** Custom CSS (no Tailwind)
+
+## 🎬 Demo
+🔗 **Live Demo:** _https://choose-stock-frontend.vercel.app_  
+🔗 **Backend Repository:** _[Link to backend repo]_  
